@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <body class="about-page">
+        <h1>welcome to about page</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html">Home</a></li>
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="contact.html">Contact</a></li>
+              <li class="nav-item"><a href="Services.html">services</a></li>
+            </ul>
+          </nav> 
+      
+</head>
+<body>
+  <style>
+    #movingElement {
+        width: 100px;
+        height: 100px;
+        background-color:ghostwhite;
+        position: absolute;
+        margin-top: 50px;
+        left: 0;
+    }
+</style>     
+  <div id="movingElement">welcome to my about page we have so much for you to know about us</div>
+  <script>
+    const element = document.getElementById('movingElement');
+    let pos = 0;
+    let direction = 1;
+
+    function move() {
+        pos += direction;
+        element.style.left = pos + 'px';
+        if (pos > window.innerWidth - 100 || pos < 0) {
+            direction *= -1;
+        }
+        requestAnimationFrame(move);
+    }
+
+    move();
+</script>
+    
+</body>
+</html>

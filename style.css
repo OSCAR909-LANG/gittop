@@ -1,0 +1,54 @@
+body.home-page{
+    background-color: chocolate;
+}
+
+body.about-page{
+    background-color: aqua;
+}
+
+body.contact-page{
+    background-color: cornflowerblue;
+}
+
+body.services-page{
+    background-color: cadetblue;
+}
+footer{
+    background-color:khaki
+}  
+
+/* Flex container for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+    background-color: #333; /* Background color for the navbar */
+    padding: 10px; /* Padding around the navbar */
+  }
+  
+  /* Flex container for the list items */
+  .nav-list {
+    display: flex;
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Styling for each list item */
+  .nav-item {
+    margin: 0 15px; /* Space between items */
+  }
+  
+  /* Styling for the links */
+  .nav-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+    padding: 10px; /* Padding inside the links */
+    display: block; /* Make the link fill the entire list item */
+  }
+  
+  /* Add hover effect */
+  .nav-item a:hover {
+    background-color: #575757; /* Darken background on hover */
+    border-radius: 5px; /* Optional: round the corners */
+  }
+  
